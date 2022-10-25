@@ -20,8 +20,14 @@ app.get('/',(req, res)=>{
     res.send(html)
 })
 
-app.get('/courses',(req, res)=>{
+app.get('/courses/',(req, res)=>{
     res.send(courses)
+})
+
+app.get('/courses/:id',(req, res)=>{
+    const ID = req.params.id;
+    const course = courses.find(c => c.id === ID);
+    res.send(course)
 })
 
 app.get('/category',(req, res)=>{
@@ -32,20 +38,50 @@ app.get('/courses/front-end',(req, res)=>{
     res.send(frontEnd)
 })
 
+app.get('/courses/front-end/:id',(req, res)=>{
+    const ID = req.params.id;
+    const course = frontEnd.find(c => c.id === ID);
+    res.send(course)
+})
+
 app.get('/courses/back-end', (req, res)=>{
     res.send(backEnd)
+})
+
+app.get('/courses/back-end/:id', (req, res)=>{
+    const ID = req.params.id;
+    const course = backEnd.find(c => c.id === ID);
+    res.send(course)
 })
 
 app.get('/courses/app-development',(req, res)=>{
     res.send(App)
 })
 
+app.get('/courses/app-development/:id',(req, res)=>{
+    const ID = req.params.id;
+    const course = App.find(c => c.id === ID);
+    res.send(course)
+})
+
 app.get('/courses/game-development',(req, res)=>{
     res.send(game)
 })
 
+app.get('/courses/game-development/:id',(req, res)=>{
+    const ID = req.params.id;
+    const course = game.find(c => c.id === ID);
+    res.send(course)
+})
+
 app.get('/courses/full-stack',(req, res)=>{
     res.send(fullStack)
+})
+
+app.get('/courses/full-stack',(req, res)=>{
+    const ID = req.params.id;
+    const course = fullStack.find(c => c.id === ID);
+    res.send(course)
 })
 
 app.listen(port,()=>{
