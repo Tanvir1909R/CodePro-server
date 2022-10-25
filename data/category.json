@@ -1,26 +1,26 @@
 [
     {
         "id":"0",
-        "category":"All"
+        "category":"all"
     },
     {
         "id":"1",
-        "category":"Front-End"
+        "category":"front-end"
     },
     {
         "id":"2",
-        "category":"Back-End"
+        "category":"back-end"
     },
     {
         "id":"3",
-        "category":"App-Development"
+        "category":"app-development"
     },
     {
         "id":"4",
-        "category":"Full-Stack"
+        "category":"full-stack"
     },
     {
         "id":"5",
-        "category":"Game-Development"
+        "category":"game-development"
     }
 ]
