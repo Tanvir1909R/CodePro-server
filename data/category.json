@@ -1,0 +1,26 @@
+[
+    {
+        "id":"0",
+        "category":"All"
+    },
+    {
+        "id":"1",
+        "category":"Front-End"
+    },
+    {
+        "id":"2",
+        "category":"Back-End"
+    },
+    {
+        "id":"3",
+        "category":"App-Development"
+    },
+    {
+        "id":"4",
+        "category":"Full-Stack"
+    },
+    {
+        "id":"5",
+        "category":"Game-Development"
+    }
+]
